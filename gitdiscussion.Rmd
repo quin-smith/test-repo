@@ -15,7 +15,8 @@ library(tidyverse)
 
 ggplot(data = mpg, aes(x = class, y = cty)) +
 	geom_jitter(aes(color = class), alpha = 0.5) +
-	labs(x = "Car class", y = "City gas mileage (mpg)")
+	labs(x = "Car class", y = "City gas mileage (mpg)") +
+  coord_polar()
 
 
 ```
